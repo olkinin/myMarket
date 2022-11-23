@@ -23,9 +23,9 @@ angular.module('market-front').controller('cartController', function ($scope, $h
  $scope.removeProduct = function (id) {
      $http.delete(contextPath + 'api/v1/cart/'+ id)
      .then(function (response) {
-     $scope.products = response.data;
      $scope.loadCart();
    });}
+
     $scope.checkOut = function () {
         $http({
             url: contextPath + 'api/v1/orders',

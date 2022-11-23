@@ -27,7 +27,6 @@ public class CartsController {
     }
 
 
-
     @DeleteMapping("/{id}")
     public void removeProduct(@PathVariable Long id) {
         cartService.removeProductByIdToCart(id);

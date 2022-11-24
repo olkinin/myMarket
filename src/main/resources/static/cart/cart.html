@@ -12,13 +12,11 @@
             <td>{{item.productTitle}}</td>
             <td>{{item.quantity}}</td>
             <td>{{item.pricePerProduct + ' x ' + item.quantity + ' = ' + item.price}}</td>
-            <td> <button class="btn btn-danger" ng-click="removeProduct(item.id)">Удалить продукт</button></td>
-
         </tr>
         <tr>
             <td></td>
             <td>Итого</td>
-            <td>{{Cart.totalPrice}}</td>
+            <td>{{cart.totalPrice}}</td>
         </tr>
         </tbody>
     </table>

@@ -19,9 +19,6 @@ import java.util.Optional;
 public class ProductsService {
     private final ProductsRepository productsRepository;
 
-
-
-
     public Page<Product> findAll(Integer minPrice, Integer maxPrice, String partTitle, Integer page) {
         Specification<Product> spec = Specification.where(null);
         if (minPrice != null) {
@@ -34,7 +31,7 @@ public class ProductsService {
             spec = spec.and(ProductsSpecifications.titleLike(partTitle));
         }
 
-        return productsRepository.findAll(spec, PageRequest.of(page - 1, 50));
+        return productsRepository.findAll(spec, PageRequest.of(page - 1, 10));
     }
 
     public Optional<Product> findById(Long id) {

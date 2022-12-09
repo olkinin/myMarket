@@ -16,6 +16,6 @@ public class AopController {
     @GetMapping ("/statistic ")
     public Object statistic (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
              return aspectClass.methodProfilingProductsService(proceedingJoinPoint);
- 
+
     }
 }

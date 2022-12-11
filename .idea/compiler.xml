@@ -10,6 +10,8 @@
         <module name="api" />
         <module name="authservice" />
         <module name="coreservice" />
+        <module name="frontservice" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +25,8 @@
       <module name="api" options="-parameters" />
       <module name="authservice" options="-parameters" />
       <module name="coreservice" options="-parameters" />
+      <module name="frontservice" options="-parameters" />
+      <module name="gateway" options="-parameters" />
     </option>
   </component>
 </project>

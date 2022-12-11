@@ -3,12 +3,13 @@ package ru.geekbrains.core.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.geekbrains.api.exceptions.ResourceNotFoundException;
 import ru.geekbrains.core.dto.Cart;
 import ru.geekbrains.core.dto.OrderDetailsDto;
 import ru.geekbrains.core.entities.Order;
 import ru.geekbrains.core.entities.OrderItem;
 import ru.geekbrains.core.repositories.OrdersRepository;
-import ru.geekbrains.market.exceptions.ResourceNotFoundException;
+
 
 import java.util.List;
 import java.util.stream.Collectors;

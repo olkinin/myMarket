@@ -3,8 +3,7 @@ package ru.geekbrains.auth.utils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import lombok.Value;
-//import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -18,10 +17,10 @@ import java.util.stream.Collectors;
 
 @Component
 public class JwtTokenUtil {
-   // @Value("${jwt.secret}")
+    @Value("${jwt.secret}")
     private String secret;
 
-  //  @Value("${jwt.lifetime}")
+   @Value("${jwt.lifetime}")
     private Integer jwtLifetime;
 
     public String generateToken(UserDetails userDetails) {

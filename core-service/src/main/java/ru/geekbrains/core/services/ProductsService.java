@@ -7,11 +7,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.geekbrains.api.exceptions.ResourceNotFoundException;
 import ru.geekbrains.core.dto.ProductDto;
 import ru.geekbrains.core.entities.Product;
 import ru.geekbrains.core.repositories.ProductsRepository;
 import ru.geekbrains.core.repositories.specifications.ProductsSpecifications;
-import ru.geekbrains.market.exceptions.ResourceNotFoundException;
+
 
 
 import java.util.Optional;

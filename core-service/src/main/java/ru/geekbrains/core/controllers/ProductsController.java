@@ -4,12 +4,13 @@ package ru.geekbrains.core.controllers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
+import ru.geekbrains.api.exceptions.ResourceNotFoundException;
 import ru.geekbrains.core.converters.ProductConverter;
 import ru.geekbrains.core.dto.ProductDto;
 import ru.geekbrains.core.entities.Product;
 import ru.geekbrains.core.services.ProductsService;
 import ru.geekbrains.core.validators.ProductValidator;
-import ru.geekbrains.market.exceptions.ResourceNotFoundException;
+
 
 @RestController
 @RequestMapping("/api/v1/products")

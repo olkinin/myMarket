@@ -5,8 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import ru.geekbrains.market.exceptions.AppError;
-import ru.geekbrains.market.exceptions.ResourceNotFoundException;
+import ru.geekbrains.api.exceptions.AppError;
+import ru.geekbrains.api.exceptions.ResourceNotFoundException;
 
 
 @ControllerAdvice

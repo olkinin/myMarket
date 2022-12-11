@@ -4,9 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import ru.geekbrains.api.exceptions.ResourceNotFoundException;
 import ru.geekbrains.core.dto.Cart;
 import ru.geekbrains.core.entities.Product;
-import ru.geekbrains.market.exceptions.ResourceNotFoundException;
+
 
 import java.util.UUID;
 import java.util.function.Consumer;

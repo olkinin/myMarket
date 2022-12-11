@@ -2,10 +2,11 @@ package ru.geekbrains.core.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import ru.geekbrains.api.dto.StringResponse;
 import ru.geekbrains.core.dto.Cart;
 import ru.geekbrains.core.services.CartService;
 import ru.geekbrains.core.services.ProductsService;
-import ru.geekbrains.market.dto.StringResponse;
+
 
 
 @RestController

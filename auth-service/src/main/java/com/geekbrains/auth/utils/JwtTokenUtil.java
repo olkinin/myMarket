@@ -30,6 +30,7 @@ public class JwtTokenUtil {
 
         Date issuedDate = new Date();
         Date expiredDate = new Date(issuedDate.getTime() + jwtLifetime);
+        
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(userDetails.getUsername())
